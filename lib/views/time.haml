@@ -1,0 +1,5 @@
+!!!
+%body
+  - @times.each do |time_data|
+    .item
+      = "#{time_data.first}:&nbsp;#{time_data.last.strftime("%Y-%m-%d %H:%M:%S")}"
